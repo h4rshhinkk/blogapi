@@ -46,7 +46,7 @@ def DeletePost(request):
 
 #Get a Post by ID
 @api_view(['GET'])
-def GetPost(request):
+def GetPost(request ):
     post_id = request.data.get('post_id')
     try:
         post = Post.objects.get(id=post_id)
